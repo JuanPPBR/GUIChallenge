@@ -1,0 +1,1 @@
+{"uuid":"eac71342-ad07-4f17-adef-eb7611cb74bf","name":"Hooks.Screenshots","children":["588c1d52-86e0-400f-8a13-b5f0265aeb6d"],"description":"","befores":[],"afters":[{"name":"Screenshots","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1647832017347,"stop":1647832017829}],"start":1647832017347,"stop":1647832017829}

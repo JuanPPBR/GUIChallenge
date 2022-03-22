@@ -1,0 +1,9 @@
+Pages\MovieTopRatedPage.class
+Pages\ActorPage.class
+Pages\LoginPage.class
+Pages\ProfilePage.class
+Pages\HomePage.class
+Pages\MoviePage.class
+TestRunner.class
+Hooks.class
+Pages\SearchQueryPage.class
