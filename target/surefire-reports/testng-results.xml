@@ -1,105 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-22T12:17:13 COT" name="GUI Challenge" finished-at="2022-03-22T12:18:09 COT" duration-ms="56554">
+  <suite started-at="2022-03-22T16:46:23 COT" name="GUI Challenge" finished-at="2022-03-22T16:47:11 COT" duration-ms="47995">
     <groups>
     </groups>
-    <test started-at="2022-03-22T12:17:13 COT" name="Demo Folder1" finished-at="2022-03-22T12:18:09 COT" duration-ms="56554">
+    <test started-at="2022-03-22T16:46:23 COT" name="Demo Folder1" finished-at="2022-03-22T16:47:11 COT" duration-ms="47995">
       <class name="TestRunner">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:17:13 COT" name="setup" finished-at="2022-03-22T12:17:21 COT" duration-ms="8719" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:46:23 COT" name="setup" finished-at="2022-03-22T16:46:29 COT" duration-ms="5802" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="FailedLogin()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:17:21 COT" name="FailedLogin" finished-at="2022-03-22T12:17:24 COT" duration-ms="2743" status="PASS">
+        <test-method signature="FailedLogin()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:46:29 COT" name="FailedLogin" finished-at="2022-03-22T16:46:32 COT" duration-ms="2688" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [You have 4 remaining login attempts.] but found [You have 7 remaining login attempts.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [You have 4 remaining login attempts.] but found [You have 7 remaining login attempts.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at TestRunner.FailedLogin(TestRunner.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FailedLogin -->
-        <test-method is-config="true" signature="Screenshots()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:17:24 COT" name="Screenshots" finished-at="2022-03-22T12:17:25 COT" duration-ms="422" status="PASS">
+        <test-method is-config="true" signature="Screenshots()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:46:32 COT" name="Screenshots" finished-at="2022-03-22T16:46:32 COT" duration-ms="495" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Screenshots -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:17:25 COT" name="tearDown" finished-at="2022-03-22T12:17:25 COT" duration-ms="282" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:46:32 COT" name="tearDown" finished-at="2022-03-22T16:46:33 COT" duration-ms="445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:17:25 COT" name="setup" finished-at="2022-03-22T12:17:33 COT" duration-ms="7770" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:46:33 COT" name="setup" finished-at="2022-03-22T16:46:37 COT" duration-ms="4237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="SortByDatesOnAscendingOrder()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:17:33 COT" name="SortByDatesOnAscendingOrder" finished-at="2022-03-22T12:17:35 COT" duration-ms="1930" status="PASS">
+        <test-method signature="SortByDatesOnAscendingOrder()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:46:37 COT" name="SortByDatesOnAscendingOrder" finished-at="2022-03-22T16:46:39 COT" duration-ms="1908" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SortByDatesOnAscendingOrder -->
-        <test-method is-config="true" signature="Screenshots()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:17:35 COT" name="Screenshots" finished-at="2022-03-22T12:17:35 COT" duration-ms="618" status="PASS">
+        <test-method is-config="true" signature="Screenshots()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:46:39 COT" name="Screenshots" finished-at="2022-03-22T16:46:40 COT" duration-ms="662" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Screenshots -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:17:35 COT" name="tearDown" finished-at="2022-03-22T12:17:36 COT" duration-ms="436" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:46:40 COT" name="tearDown" finished-at="2022-03-22T16:46:40 COT" duration-ms="302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:17:36 COT" name="setup" finished-at="2022-03-22T12:17:42 COT" duration-ms="5839" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:46:40 COT" name="setup" finished-at="2022-03-22T16:46:44 COT" duration-ms="4500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="SuccessfulLogin()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:17:42 COT" name="SuccessfulLogin" finished-at="2022-03-22T12:17:44 COT" duration-ms="1997" status="PASS">
+        <test-method signature="SuccessfulLogin()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:46:44 COT" name="SuccessfulLogin" finished-at="2022-03-22T16:46:46 COT" duration-ms="1850" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SuccessfulLogin -->
-        <test-method is-config="true" signature="Screenshots()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:17:44 COT" name="Screenshots" finished-at="2022-03-22T12:17:44 COT" duration-ms="427" status="PASS">
+        <test-method is-config="true" signature="Screenshots()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:46:46 COT" name="Screenshots" finished-at="2022-03-22T16:46:47 COT" duration-ms="373" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Screenshots -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:17:44 COT" name="tearDown" finished-at="2022-03-22T12:17:44 COT" duration-ms="325" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:46:47 COT" name="tearDown" finished-at="2022-03-22T16:46:47 COT" duration-ms="280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:17:44 COT" name="setup" finished-at="2022-03-22T12:17:49 COT" duration-ms="4716" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:46:47 COT" name="setup" finished-at="2022-03-22T16:46:51 COT" duration-ms="4309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="SuccessfulSearch()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:17:49 COT" name="SuccessfulSearch" finished-at="2022-03-22T12:17:50 COT" duration-ms="740" status="PASS">
+        <test-method signature="SuccessfulSearch()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:46:51 COT" name="SuccessfulSearch" finished-at="2022-03-22T16:46:52 COT" duration-ms="923" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SuccessfulSearch -->
-        <test-method is-config="true" signature="Screenshots()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:17:50 COT" name="Screenshots" finished-at="2022-03-22T12:17:50 COT" duration-ms="423" status="PASS">
+        <test-method is-config="true" signature="Screenshots()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:46:52 COT" name="Screenshots" finished-at="2022-03-22T16:46:52 COT" duration-ms="337" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Screenshots -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:17:50 COT" name="tearDown" finished-at="2022-03-22T12:17:51 COT" duration-ms="494" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:46:52 COT" name="tearDown" finished-at="2022-03-22T16:46:53 COT" duration-ms="305" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:17:51 COT" name="setup" finished-at="2022-03-22T12:17:55 COT" duration-ms="4748" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:46:53 COT" name="setup" finished-at="2022-03-22T16:46:57 COT" duration-ms="4036" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="ValidateActingTimeline()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:17:55 COT" name="ValidateActingTimeline" finished-at="2022-03-22T12:17:59 COT" duration-ms="3642" status="PASS">
+        <test-method signature="ValidateActingTimeline()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:46:57 COT" name="ValidateActingTimeline" finished-at="2022-03-22T16:47:00 COT" duration-ms="3566" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateActingTimeline -->
-        <test-method is-config="true" signature="Screenshots()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:17:59 COT" name="Screenshots" finished-at="2022-03-22T12:17:59 COT" duration-ms="344" status="PASS">
+        <test-method is-config="true" signature="Screenshots()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:47:00 COT" name="Screenshots" finished-at="2022-03-22T16:47:01 COT" duration-ms="393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Screenshots -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:17:59 COT" name="tearDown" finished-at="2022-03-22T12:18:00 COT" duration-ms="343" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:47:01 COT" name="tearDown" finished-at="2022-03-22T16:47:01 COT" duration-ms="466" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:18:00 COT" name="setup" finished-at="2022-03-22T12:18:04 COT" duration-ms="4396" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:47:01 COT" name="setup" finished-at="2022-03-22T16:47:06 COT" duration-ms="4867" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyMovieGenreFilter()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:18:04 COT" name="VerifyMovieGenreFilter" finished-at="2022-03-22T12:18:08 COT" duration-ms="3528" status="PASS">
+        <test-method signature="VerifyMovieGenreFilter()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:47:06 COT" name="VerifyMovieGenreFilter" finished-at="2022-03-22T16:47:10 COT" duration-ms="3608" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyMovieGenreFilter -->
-        <test-method is-config="true" signature="Screenshots()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:18:08 COT" name="Screenshots" finished-at="2022-03-22T12:18:09 COT" duration-ms="893" status="PASS">
+        <test-method is-config="true" signature="Screenshots()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:47:10 COT" name="Screenshots" finished-at="2022-03-22T16:47:11 COT" duration-ms="972" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Screenshots -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestRunner@7e8dcdaa]" started-at="2022-03-22T12:18:09 COT" name="tearDown" finished-at="2022-03-22T12:18:09 COT" duration-ms="489" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestRunner@302a07d]" started-at="2022-03-22T16:47:11 COT" name="tearDown" finished-at="2022-03-22T16:47:11 COT" duration-ms="361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

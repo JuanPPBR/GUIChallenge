@@ -3,6 +3,7 @@ Pages\ActorPage.class
 Pages\LoginPage.class
 Pages\ProfilePage.class
 Pages\HomePage.class
+Data.class
 Pages\MoviePage.class
 TestRunner.class
 Hooks.class
