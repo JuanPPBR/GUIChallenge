@@ -1,11 +1,11 @@
 package Pages;
 
-import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import static org.apache.logging.log4j.LogManager.getLogger;
 
 public class LoginPage {
 
@@ -17,7 +17,7 @@ public class LoginPage {
     private final By thereWasAProblemBy = By.className("carton");
     private final By redBoxBy = By.xpath("//div[@class='content']/ul/li['You have 6 remaining login attempts.']");
 
-    private static final Logger log = LogManager.getLogger(LoginPage.class);
+    private static final Logger log = getLogger(LoginPage.class.getName());
 
     public LoginPage(WebDriver driver){
         this.driver = driver;

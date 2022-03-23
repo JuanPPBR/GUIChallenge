@@ -1,13 +1,9 @@
 import Pages.*;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 import static org.testng.Assert.*;
 
 public class TestRunner extends Hooks{
-
-    private static final Logger log = LogManager.getLogger(TestRunner.class);
 
     @Test
     public void SuccessfulLogin(){
@@ -19,8 +15,6 @@ public class TestRunner extends Hooks{
 
         HomePage homePage = new HomePage(driver);
         ProfilePage profilePage = new ProfilePage(driver);
-
-        log.debug("Prueba...");
 
         homePage.clickLoginButton()
                 .typingUsername(username)
